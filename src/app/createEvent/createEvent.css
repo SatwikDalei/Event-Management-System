@@ -1,0 +1,87 @@
+/* Form Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e90ff, #ff69b4);
+  height: 100vh;
+  margin: 0; /* Ensure no extra margin on the body */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top of the page */
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  color: black;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+}
+
+/* Input Container */
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styles */
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Input Styles */
+input {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button[type="button"] {
+  margin-top: 10px;
+  background-color: #007bff;
+}
+
+button[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+/* Ticket Input Fields */
+.ticketInput {
+  display: flex;
+  gap: 10px;
+}

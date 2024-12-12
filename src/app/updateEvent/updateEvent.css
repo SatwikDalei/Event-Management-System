@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e90ff, #ff69b4);
+  height: 100vh;
+  margin: 0; /* Ensure no extra margin on the body */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top of the page */
+}
+.update-event-container {
+    width: 400px;
+    margin:  auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .update-event-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .update-event-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-event-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .update-event-container input,
+  .update-event-container textarea,
+  .update-event-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .update-event-container textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .update-event-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-event-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  

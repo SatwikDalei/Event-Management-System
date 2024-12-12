@@ -1,0 +1,84 @@
+/* Ensure the whole page takes full height */
+html, body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e90ff, #ff69b4);
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container for the registration form, centered both vertically and horizontally */
+  .register-event-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Position container in the middle vertically */
+    left: 50%; /* Position container in the middle horizontally */
+    transform: translate(-50%, -50%); /* Offset the container to be fully centered */
+    color: black;
+  }
+  
+  /* Title of the form */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Register form styling */
+  .register-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styling */
+  .form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  /* Input fields styling */
+  .form-group input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Register button styling */
+  .register-button {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Button hover effect */
+  .register-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+  }
+  
+  /* Success message styling */
+  .success-message {
+    color: green;
+    margin-bottom: 15px;
+  }
+  

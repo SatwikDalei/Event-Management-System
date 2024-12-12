@@ -1,0 +1,131 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e90ff, #ff69b4);
+  height: 100vh;
+  margin: 0; /* Ensure no extra margin on the body */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top of the page */
+}
+
+/* Navbar styling */
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-around; /* Distribute space between items */
+  align-items: center;
+  background-color: #311d4b;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-title {
+  font-size: 40px; /* Adjust title size */
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-item {
+  cursor: pointer;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.navbar-item:hover {
+  color: #f39c12;
+}
+
+
+/* Page Title */
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 80px; /* Give space for the fixed navbar */
+  text-align: center;
+}
+
+/* Dashboard Content */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Vertically center the content */
+  height: calc(100vh - 80px); /* Adjust for navbar height */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+}
+
+/* Event Cards Layout */
+.event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add spacing between cards */
+  margin-top: 20px;
+  
+}
+
+/* Styling for individual event card */
+.event-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 450px; /* Adjust width of event cards */
+  background-color: #fff;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left; /* Align text to the left */
+}
+
+/* Hover effect for event cards */
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 16px;
+  color: #333;
+}
+/* Update and Delete Event Button Styling */
+.update-event-button,
+.delete-event-button {
+  padding: 14px;
+  font-size: 16px;
+  background-color: #0070f3; /* Same as login button color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; /* Add space between buttons */
+  width: 100%; /* Make buttons take the full width of the card */
+}
+
+.update-event-button:hover,
+.delete-event-button:hover {
+  background-color: #005bb5;
+}
+
+.update-event-button:focus,
+.delete-event-button:focus {
+  outline: none;
+}
+

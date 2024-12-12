@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e90ff, #ff69b4);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-container {
+    width: 600px;  /* Increased width to make the form bigger */
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.register-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap between form elements */
+}
+
+.register-container .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 12px;  /* Increased padding for bigger input fields */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-container input[type="text"]:focus,
+.register-container input[type="email"]:focus,
+.register-container input[type="password"]:focus {
+    border-color: #0070f3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 112, 243, 0.5);
+}
+
+.register-container label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-container div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Increased gap for radio buttons */
+    align-items: center;
+}
+
+.register-container input[type="radio"] {
+    margin-right: 8px;
+    width: 20px; /* Increase the size of the radio button */
+    height: 20px;
+    cursor: pointer;
+    accent-color: #28a745; /* Set the selected color to green */
+}
+
+.register-container input[type="radio"]:checked {
+    background-color: #28a745; /* Green when selected */
+    border-color: #28a745;
+}
+
+.register-container button {
+    padding: 14px; /* Increased button padding */
+    font-size: 16px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container button:hover {
+    background-color: #005bb5;
+}
+
+.register-container button:focus {
+    outline: none;
+}
+
+.register-container .radio-label {
+    font-size: 14px;
+    color: #555;
+    margin-left: 5px;
+}
+
+.register-container .form-group-radio {
+    display: flex;
+    gap: 20px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-redirect {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-redirect a {
+    color: #0070f3;
+    font-weight: bold;
+    text-decoration: underline;
+}
